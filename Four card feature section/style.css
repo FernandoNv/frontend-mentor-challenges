@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,400,600&display=swap');
+
+:root{
+    --red-color: hsl(0, 78%, 62%);
+    --cyan-color: hsl(180, 62%, 55%);
+    --orange-color: hsl(34, 97%, 64%);
+    --blue-color: hsl(212, 86%, 64%);
+    --very-dark-blue-color: hsl(234, 12%, 34%);
+    --grayish-blue-color: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: var(--very-dark-blue-color);
+    background-color: var(--very-light-gray);
+}
+
+
+.header{
+    max-width: 700px;
+    min-height: 40vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.title{
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.title-bolder{
+    font-weight: 600;
+}
+
+.description, .card-description{
+    color: var(--grayish-blue-color);
+}
+
+.card-area{
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 13px 20px -13px var(--grayish-blue-color);
+    margin: 20px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.card::after{
+    content: "";
+    width: 100%;
+    height: 5px;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.card-border-blue::after{
+    background-color: var(--blue-color);
+}
+
+.card-border-red::after{
+    background-color: var(--red-color);
+}
+
+.card-border-cyan::after{
+    background-color: var(--cyan-color);
+}
+
+.card-border-orange::after{
+    background-color: var(--orange-color);
+}
+
+.card-title, .card-description, .card img{
+    margin: 10px 0px;
+}
+
+.card img{
+    display: block;
+    float: right;
+}
+
+@media(min-width: 400px){
+    .card{
+        width: 375px;
+    }
+}
+@media(min-width: 770px){
+    .card-area{
+        max-width: 1440px;
+        height: 60vh;
+        margin: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-shrink: 1;
+        justify-content: center;
+    }
+
+    .card{
+        margin: 20px;
+    }
+
+    .card-push{
+        transform: translateY(50%);
+    }
+}
