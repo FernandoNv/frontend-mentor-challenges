@@ -122,7 +122,7 @@ body{
 .box-list li{
     font-size: 1.1em;
     color: var(--light-gray-color);
-    margin-bottom: 0.5em;
+    margin-bottom: 4px;
 }
 
 @media(min-width: 768px){
