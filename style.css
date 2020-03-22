@@ -23,6 +23,7 @@ body{
 .content, footer{
     max-width: 1440px;
     padding: 2em;
+    margin: auto;
 }
 
 .content{
