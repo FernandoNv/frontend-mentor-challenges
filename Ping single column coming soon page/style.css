@@ -170,6 +170,8 @@ body{
     color: #fff;
 }
 
+.text-icon{display: none;}
+
 .copyright{
     font-size: 0.6em;
     padding: 2em;
