@@ -162,6 +162,7 @@ body{
     background-color: #fff;
     color: var(--blue-color);
     transition: 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .social-list li a:hover{
