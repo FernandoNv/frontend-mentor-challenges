@@ -40,10 +40,6 @@ body{
     margin: auto;
 }
 
-.min-height{
-    min-height: 100vh;
-}
-
 .header{
     display: flex;
     justify-content: space-between;
@@ -262,6 +258,12 @@ small{
     justify-content: center;
 }
 
+@media screen and (max-width: 768px){
+    .box{
+        min-height: 100vh;
+    }
+}
+
 @media screen and (min-width: 768px){
     .title{
         font-size: 2em;
@@ -291,7 +293,7 @@ small{
         text-align: initial;
     }
 
-    
+
     .p-text{
         padding: 1em 0;
     }
@@ -299,10 +301,7 @@ small{
     .box{
         flex-direction: row;
         align-content: flex-start;
-    }
-
-    .box-top{
-        min-height: calc(100vh - 100px);
+        padding: 2em 0;
     }
 
     .flex-direction-row-reverse{
