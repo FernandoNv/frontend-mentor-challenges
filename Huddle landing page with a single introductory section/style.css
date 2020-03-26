@@ -125,7 +125,7 @@ body{
         display: flex;
         flex-direction: column;
         background-image: url("./images/bg-desktop.svg");
-        background-size: cover;
+        background-size: contain;
     }
 
     .header{
