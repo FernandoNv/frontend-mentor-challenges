@@ -153,6 +153,7 @@ form input::placeholder{
 .box-description{
     color: var(--desaturated-blue);
     padding: 1em 0 1.5em;
+    text-align: center;
 }
 
 .box-link{
@@ -356,6 +357,7 @@ footer{
     }
 
     .content{
+        height: initial !important;
         flex-direction: row-reverse;
         align-items: center;
         justify-content: center;
@@ -443,7 +445,6 @@ footer{
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-
     }
 
     .box-footer-itens{
